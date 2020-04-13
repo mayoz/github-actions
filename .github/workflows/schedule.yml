@@ -1,7 +1,9 @@
 name: Schedule
 on:
-  schedule:
-    - cron: '*/15 * * * *'
+  push:
+    branches: master
+#  schedule:
+#    - cron: '*/15 * * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
